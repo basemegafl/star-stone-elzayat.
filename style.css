@@ -1,0 +1,401 @@
+#header{
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    width: 161px;
+    border-radius: 80px;
+    justify-content: space-around;
+    
+
+}
+span{
+    justify-self: start;
+    display: flex;
+}
+
+#wp{
+    width: 40px;
+}
+ul{
+    display: flex;
+    gap: 30px;          /* Space between 'buton' and 'button2' */
+    list-style: none;   /* Removes the black bullet points */
+    margin: 0;
+    padding: 0
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+    border-radius: 2px;
+    font-size: 23px;
+    padding: 3px;
+}
+
+#l{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; background-color: bisque;
+    border-radius: 20px;
+    position: fixed;
+    box-shadow: 3px 1px 10px 3px gray;
+}
+
+#nav{
+ margin-left: 20px;
+ margin-right: auto;
+ 
+ 
+}
+
+#spacer{
+    width: 800px;
+}
+
+#w{
+    
+    
+    
+    width: 100px;
+    border-radius: 80px;
+
+
+}
+
+#kol{
+    display: flex;
+    padding-top: 80px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+#f{
+    width: 300px;
+    /* Create a linear gradient from a light gold to a darker rich gold */
+    background: linear-gradient(135deg, #BF953F, #000000, #B38728, #000000, #AA771C);
+    
+    /* Clips the background to only show inside the text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+body{
+    background-color: rgb(250 247 242 / var(--tw-bg-opacity, 1));
+
+
+}
+
+
+#line{
+    background-color: #AA771C;
+    width: 220px;
+    padding: 1px;
+    border-radius: 200px;
+    margin-left: auto;
+    margin-right: 430px;
+    margin-bottom: 20px;
+}
+
+hr{
+    border-top: 3px solid #BF953F;
+}
+
+.slide{
+    background-color: rgb(5, 5, 3);
+    width: 200px;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 12px 10px 0px rgb(107, 101, 101);
+    
+}
+#ll{
+    width: 200px;
+}
+
+#slider-fix{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.img-slide{
+    border-radius: 9px;
+    
+}
+.dd{
+ text-align: center;
+padding: 200px;
+}
+
+/* Target the whole page */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #db3b3b;
+  border-radius: 5px;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #bf953f   transparent;
+}
+
+
+
+.my-scrollable-box {
+  max-height: 400px;
+  overflow-y: auto; /* Required for scrollbars to show */
+}
+
+/* Then apply your scroll styles to it */
+.my-scrollable-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.my-scrollable-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.my-scrollable-box::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.whats-btn{
+    color: white;
+    background-color: #AA771C;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.kl{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    background-color: #888;
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 10px  rgb(148, 145, 145);
+    
+    
+}
+
+.prod-img{
+border-radius: 8px;
+ box-shadow: #726f6f 0 0 100px 2px;
+
+}
+
+.p-pro{
+    text-align: center;
+    font-size: 40px;
+}
+
+#new{
+    background-color: #db3b3b;
+    width: 130px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wts-btn{
+    color: blue;
+}
+
+footer{
+    background-color: #4e4b4b;
+    width: 100%;
+    border-radius: 9px;
+    text-align: center;
+}
+
+
+#df{
+    background-color: #db3b3b;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width: 100px;
+    padding: 20px;
+}
+
+/* ==========================================
+   Mobile Phones Only (Max Width: 768px)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Stack the top header and navigation */
+    #l {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    #nav ul {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* 2. Stack the product card elements vertically */
+    .kl {
+        flex-direction: column;
+        text-align: center;
+        max-width: 90%;
+        margin: 15px auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    /* 3. Make product images span the full width */
+    .prod-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* 4. Adjust the product title size */
+    .p-pro {
+        font-size: 1.3rem;
+        margin: 5px 0;
+    }
+
+    /* 5. Make the WhatsApp order button full-width for easy tapping */
+    .whats-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        display: block;
+    }
+}
+
+
+/* ==========================================
+   Mobile Phones Media Query (Max Width: 768px)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Header & Navigation */
+    #l {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #nav ul {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* 2. Hero Banner Section (#kol) */
+    #kol {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    #w {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #f {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    /* 3. Section Titles */
+    #new {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* 4. Products / Slides Section (#slider-fix) */
+    #slider-fix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .slide {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 15px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .img-slide {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slide p {
+        font-size: 1.3rem;
+        margin: 10px 0;
+    }
+
+    /* 5. WhatsApp Buttons */
+    .whats-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        margin-top: 10px;
+    }
+
+    /* 6. Footer */
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    footer h1 {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+}
+
+/* Extra Small Phones (Max Width: 480px) */
+@media screen and (max-width: 480px) {
+    #f {
+        font-size: 1.2rem;
+    }
+
+    #new {
+        font-size: 1.3rem;
+    }
+}
